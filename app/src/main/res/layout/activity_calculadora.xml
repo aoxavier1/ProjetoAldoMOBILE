@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Calculadora">
+// Texto do primeiro Valor
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Digite o Primeiro Valor"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="16dp" />
+// Texto do Segundo Valor
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Digite o Segundo Valor"
+        app:layout_constraintTop_toBottomOf="@+id/editText1"
+        tools:layout_editor_absoluteX="5dp" />
+// Texto do Resultado
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Resultado"
+        app:layout_constraintTop_toBottomOf="@+id/button4"
+        tools:layout_editor_absoluteX="174dp" />
+// Digitar o primeiro Valor
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="407dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_editor_absoluteX="1dp" />
+// Digitar o segundo Valor
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="407dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:layout_editor_absoluteX="5dp" />
+// Digitar o primeiro Valor
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="407dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:layout_editor_absoluteX="2dp" />
+// Botão de Soma
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="134dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="4dp"
+        android:text="Soma"
+        app:layout_constraintTop_toBottomOf="@+id/button6"
+        tools:layout_editor_absoluteX="146dp" />
+// Botão de Subtração
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="135dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:text="Subtração"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        tools:layout_editor_absoluteX="147dp" />
+// Botão de Multiplicação
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="134dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="4dp"
+        android:text="Multiplicação"
+        app:layout_constraintTop_toBottomOf="@+id/button8"
+        tools:layout_editor_absoluteX="147dp" />
+// Botão de Porcentagem
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="133dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="36dp"
+        android:text="Porcentagem"
+        app:layout_constraintTop_toBottomOf="@+id/editText2"
+        tools:layout_editor_absoluteX="146dp" />
+// Botão de Divisão
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="133dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="4dp"
+        android:text="Divisão"
+        app:layout_constraintTop_toBottomOf="@+id/button7"
+        tools:layout_editor_absoluteX="146dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
